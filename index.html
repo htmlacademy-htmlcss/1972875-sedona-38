@@ -2,11 +2,44 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
+    <title>Седона</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
-
+    <header class="header">
+      <a class="logo-nav" href="index.html"><img src="logo.svg" alt="Логотип гостиницы Седона"></a>
+      <nav class="navigation">
+        <ul class="navigation-list">
+          <li class="navigation-item">
+            <a class="navigation-link" href="index.html">Главная</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="about.html">О Седоне</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="hotel.html">Гостиница</a>
+          </li>
+        </ul>
+        <ul class="navigation-user">
+          <li class="navigation-item-user">
+            <a class="navigation-src" href="#">поиск</a>
+          </li>
+          <li class="navigation-item-user">
+            <a class="navigation-like" href="#">лайки</a>
+          </li>
+        </ul>
+        <button class="join" type="button">Хочу сюда!</button>
+      </nav>
+    </header>
+    <main>
+      <section class="Sedona">
+        <div class="name">
+          <img src="welcome.svg" alt="Добро пожаловать в великолепную">
+          <div class="slogan"> <!--очень похоже на img, но в фигме это не так???-->
+            <h1>Sedona</h1>
+            <q>Because the Grand Canyon sucks</q>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
