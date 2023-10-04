@@ -34,11 +34,84 @@
     </nav>
   </header>
   <main class="main-inner">
-    <section class="filter">
-      <div class="filter-content">
-        <h1>Гостиницы Седоны</h1>
+    <header class="inner-header">
+      <h1 class="inner-header-title">Гостиницы</h1>
+      <section class="breadcrumbs">
+        <a class="breadcrumbs-icon-home" href="index.html"><img src="icon-home-catalog.svg"></a>
+        <img class="breadcrumbs-icon" src="icon-home-go.svg">
+        <p class="breadcrumbs-link" href="">Гостиницы</p>
+      </section>
+    </header>
+    <h2 class="visually-hidden">Виды, категории и стоимость номеров гостиницы</h2>
+    <section class="catalog-hotel-choice">
+      <div class="hotel-filter">
+        <fieldset class="filter-place">
+          <legend class="filter-place-title">Инфраструктура:
+          </legend>
+          <ul class="filter-place-list">
+            <li class="filter-place-item">
+              <label class="control">
+                <input class="control-input" type="checkbox" name="Бассейн" checked>Бассейн
+              </label>
+            </li>
+            <li class="filter-place-item">
+              <label class="control">
+                <input class="control-input" type="checkbox" name="Парковка" checked>Парковка
+              </label>
+            </li>
+            <li class="filter-place-item">
+              <label class="control">
+                <input class="control-input" type="checkbox" name="Wi-Fi">Wi-Fi
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+      </div>
+      <div class="housing-filter">
+        <fieldset class="filter-housing">
+          <legend class="filter-housing-title">Тип жилья:
+          </legend>
+          <ul class="filter-housing-list">
+            <li class="filter-housing-item">
+              <label class="control">
+                <input class="control-input" type="radio" name="Гостиница" value="Гостиница">Гостиница
+              </label>
+            </li>
+            <li class="filter-housing-item">
+              <label class="control">
+                <input class="control-input" type="radio" name="Мотель" value="Мотель">Мотель
+              </label>
+            </li>
+            <li class="filter-housing-item">
+              <label class="control">
+                <input class="control-input" type="radio" name="Апартаменты" value="Апартаменты">Апартаменты
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+      </div>
+      <div class="hotel-price">
+
       </div>
     </section>
+
+
+      <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
+
+
+        <fieldset class="catalog-filter-group">
+          <legend class="catalog-filter-title">Группы товаров</legend>
+        </fieldset>
+
+
+        <button class="button" type="submit">Показать</button>
+      </form>
+
+
+
+
+
+
     <section class="hotel-list">
       <ul>
         <a class="landscape-img" href="#"><img src="hotel-1.svg" alt="Пейзажи Седоны"></a>
