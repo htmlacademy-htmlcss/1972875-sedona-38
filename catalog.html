@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>Каталог</title>
 </head>
 <body>
@@ -42,7 +43,7 @@
         <p class="breadcrumbs-link" href="">Гостиницы</p>
       </section>
     </header>
-    <h2 class="visually-hidden">Выбор видов, категорий и стоимости номеров гостиницы</h2>
+    <h2 class="visually-hidden">Выбор вида, категории и стоимости номеров гостиницы</h2>
     <section class="catalog-hotel-choice">
       <form class="hotel-filter" action="https://echo.htmlacademy.ru/" method="get">
         <fieldset class="filter-place">
@@ -102,7 +103,7 @@
         </div>
         <div class="hotel-price-buttons">
           <button class="button-go" type="submit">Применить</button>
-        <button class="button-fale" type="submit">Сбросить</button>
+          <button class="button-fale" type="submit">Сбросить</button>
         </div>
       </form>
     </section>
@@ -111,19 +112,17 @@
       <select class="select-control" aria-label="Сортировка">
         <option value="cheap">Сначала дешёвые</option>
       </select>
-      <!--
-      <div class="views">
+      <div class="wrapper-views">
         <div class="view-icon-1">
-          <img src="view-icon-1">
+          <img src="view-icon-1.svg" alt="">
         </div>
         <div class="view-icon-2">
-          <img src="view-icon-2">
+          <img src="view-icon-2.svg" alt="">
         </div>
         <div class="view-icon-3">
-          <img src="view-icon-3">
+          <img src="view-icon-3.svg" alt="">
         </div>
       </div>
-    -->
     </section>
   </main>
   <section class="catalog-hotel-list">
@@ -137,12 +136,12 @@
         <p class="hotel-name-card">От 4000 ₽</p>
         <a class="hotel-card-button-for button" href="#">подробнее</a>
         <a class="hotel-card-button-save button" href="#">в избранное</a>
-        <div class="rating">
+        <div class="wrapper-rating">
           <div class="rating-stars">
-            <img src="star.svg" alt="">
-            <img src="star.svg" alt="">
-            <img src="star.svg" alt="">
-            <img src="star.svg" alt="">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
           </div>
           <div class="rating-views">
             <p class="rating-text">Рейтинг: 8.5</p>
@@ -158,12 +157,12 @@
         <p class="hotel-name-card">От 5000 ₽</p>
         <a class="hotel-card-button-for button" href="#">подробнее</a>
         <a class="hotel-card-button-saving button" href="#">в избранном</a>
-        <div class="rating">
+        <div class="wrapper-rating">
           <div class="rating-stars">
-            <img src="star.svg" alt="">
-            <img src="star.svg" alt="">
-            <img src="star.svg" alt="">
-            <img src="star.svg" alt="">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
           </div>
           <div class="rating-views">
             <p class="rating-text">Рейтинг: 9.2</p>
@@ -179,11 +178,11 @@
         <p class="hotel-name-card">От 2500 ₽</p>
         <a class="hotel-card-button-for button" href="#">подробнее</a>
         <a class="hotel-card-button-save button" href="#">в избранное</a>
-        <div class="rating">
+        <div class="wrapper-rating">
           <div class="rating-stars">
-            <img src="star.svg" alt="">
-            <img src="star.svg" alt="">
-            <img src="star.svg" alt="">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
           </div>
           <div class="rating-views">
             <p class="rating-text">Рейтинг: 6.9</p>
@@ -199,10 +198,10 @@
         <p class="hotel-name-card">От 1500 ₽</p>
         <a class="hotel-card-button-for button" href="#">подробнее</a>
         <a class="hotel-card-button-save button" href="#">в избранное</a>
-        <div class="rating">
+        <div class="wrapper-rating">
           <div class="rating-stars">
-            <img src="star.svg" alt="">
-            <img src="star.svg" alt="">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
           </div>
           <div class="rating-views">
             <p class="rating-text">Рейтинг: 5.0</p>
@@ -242,8 +241,6 @@
       </li>
     </ul>
   </section>
-
-
   <section class="subscription">
     <h2>Подпишитесь на рассылку</h2>
     <p>Только полезная информация и никакого спама, <br> честное бойскаутское!</p>
