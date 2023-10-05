@@ -17,7 +17,7 @@
             <a class="navigation-link" href="about.html">О Седоне</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="hotel.html">Гостиница</a>
+            <a class="navigation-link" href="hotel.html">Гостиницы</a>
           </li>
         </ul>
         <ul class="navigation-user">
@@ -27,19 +27,22 @@
           <li class="navigation-item-user">
             <a class="navigation-like" href="#">лайки</a>
           </li>
+          <li class="navigation-item-user-join">
+            <a class="navigation-join" href="#">Хочу сюда!</a>
+          </li>
         </ul>
-        <button class="join" type="button">Хочу сюда!</button>
       </nav>
     </header>
     <main>
-      <section class="Sedona">
-        <div class="name">
-          <img src="welcome.svg" alt="Добро пожаловать в великолепную">
-          <div class="slogan">
-            <h1>Sedona</h1>
-            <q>Because the Grand Canyon sucks</q>
-          </div>
+      <section class="main-img">
+        <span class="visually-hidden">
+          <h1>Гостиница в городе Седона</h1>
+        </span>
+        <div class="slogan">
+          <img src="welcome.svg" alt="Добро пожаловать в великолепный город Седона">
         </div>
+      </section>
+      <section class="book-style">
       </section>
       <h2>Седона - небольшой городок в Аризоне, заслуживающий большего</h2>
       <p>Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
@@ -71,29 +74,32 @@
       <p>Опытный персонал и качественное обслуживание!</p>
       <section class="service">
         <div class="service-1">
-          <!--иконка-->
+          <img src="Vector-home.svg" alt="">
           <h3>Жильё</h3>
           <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
         </div>
         <div class="service-2">
-          <!--иконка-->
+          <img src="Vector-food.svg" alt="">
           <h3>Еда</h3>
           <p>Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
         </div>
         <div class="service-3">
-          <!--иконка-->
+          <img src="Vector-presents.svg" alt="">
           <h3>Сувениры</h3>
           <p>Не только китайского, но и настоящего местного производства!</p>
         </div>
       </section>
       <h2>Заинтересовались?</h2>
       <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-      <button class="search-hotel" type="button">Поиск гостиницы в Седоне</button>
+      <a class="search-hotel" href="#">Поиск гостиницы в Седоне</a>
     </main>
     <section class="subscription">
       <h2>Подпишитесь на рассылку</h2>
-      <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
-    <!--кнопка поиска-->
+      <p>Только полезная информация и никакого спама, <br> честное бойскаутское!</p>
+      <input class="email" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
+      <button class="button" type="submit">
+        <span class="newsletter-button">Подписаться</span>
+      </button>
     </section>
   </body>
   <footer>
