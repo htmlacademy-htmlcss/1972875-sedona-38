@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>Каталог</title>
   <base href="https://htmlacademy-htmlcss.github.io/1972875-sedona-38/2/">
 </head>
@@ -35,17 +34,19 @@
       </ul>
     </nav>
   </header>
+
   <main class="main-inner">
-    <header class="inner-header">
+    <section class="inner-header">
       <h1 class="inner-header-title">Гостиницы</h1>
-      <section class="breadcrumbs">
-        <a class="breadcrumbs-icon-home" href="index.html"><img src="icon-home-catalog.svg"></a>
-        <img class="breadcrumbs-icon" src="icon-home-go.svg">
-        <p class="breadcrumbs-link" href="">Гостиницы</p>
-      </section>
-    </header>
+      <div class="breadcrumbs">
+        <a class="breadcrumbs-icon-home" href="index.html"><img src="icon-home-catalog.svg" alt=""></a>
+        <img class="breadcrumbs-icon" src="icon-home-go.svg" alt="">
+        <a class="breadcrumbs-link" href="catalog.html">Гостиницы</a>
+      </div>
+    </section>
     <h2 class="visually-hidden">Выбор вида, категории и стоимости номеров гостиницы</h2>
-    <section class="catalog-hotel-choice">
+
+    <div class="catalog-hotel-choice">
       <form class="hotel-filter" action="https://echo.htmlacademy.ru/" method="get">
         <fieldset class="filter-place">
           <legend class="filter-place-title">Инфраструктура:
@@ -68,8 +69,6 @@
             </li>
           </ul>
         </fieldset>
-      </form>
-      <form class="housing-filter" action="https://echo.htmlacademy.ru/" method="get">
         <fieldset class="filter-housing">
           <legend class="filter-housing-title">Тип жилья:
           </legend>
@@ -91,23 +90,26 @@
             </li>
           </ul>
         </fieldset>
-      </form>
-      <form class="hotel-price" action="https://echo.htmlacademy.ru/" method="get">
         <fieldset class="filter-hotel-price">
           <legend class="filter-hotel-price-title">Стоимость, ₽:
           </legend>
           <input type="text" name="min-price" id="min-price-field" value="0" placeholder="от">
+            <span class="filter-hotel-price-min">от</span>
           <input type="text" name="max-price" id="max-price-field" value="9000" placeholder="до">
+            <span class="filter-hotel-price-max">до</span>
         </fieldset>
         <div class="range-slider">
           <input type="range" id="price-slider-field" name="price-slider" min="0" max="9000">
+          <button class="slider-but-1"></button>
+          <button class="slider-but-2"></button>
         </div>
         <div class="hotel-price-buttons">
           <button class="button-go" type="submit">Применить</button>
           <button class="button-fale" type="submit">Сбросить</button>
         </div>
       </form>
-    </section>
+    </div>
+
     <section class="sorting">
       <h2 class="sorting-total">Найдено гостиниц: 38</h2>
       <select class="select-control" aria-label="Сортировка">
@@ -126,6 +128,7 @@
       </div>
     </section>
   </main>
+
   <section class="catalog-hotel-list">
     <ul class="hotel-list">
       <li class="hotel-card-1">
@@ -139,10 +142,6 @@
         <a class="hotel-card-button-save button" href="#">в избранное</a>
         <div class="wrapper-rating">
           <div class="rating-stars">
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
           </div>
           <div class="rating-views">
             <p class="rating-text">Рейтинг: 8.5</p>
@@ -160,10 +159,6 @@
         <a class="hotel-card-button-saving button" href="#">в избранном</a>
         <div class="wrapper-rating">
           <div class="rating-stars">
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
           </div>
           <div class="rating-views">
             <p class="rating-text">Рейтинг: 9.2</p>
@@ -181,9 +176,6 @@
         <a class="hotel-card-button-save button" href="#">в избранное</a>
         <div class="wrapper-rating">
           <div class="rating-stars">
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
           </div>
           <div class="rating-views">
             <p class="rating-text">Рейтинг: 6.9</p>
@@ -201,8 +193,6 @@
         <a class="hotel-card-button-save button" href="#">в избранное</a>
         <div class="wrapper-rating">
           <div class="rating-stars">
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
           </div>
           <div class="rating-views">
             <p class="rating-text">Рейтинг: 5.0</p>
@@ -242,6 +232,7 @@
       </li>
     </ul>
   </section>
+
   <section class="subscription">
     <h2>Подпишитесь на рассылку</h2>
     <p>Только полезная информация и никакого спама, <br> честное бойскаутское!</p>
