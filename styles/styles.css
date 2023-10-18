@@ -26,43 +26,8 @@ body {
   visibility: hidden;
 }
 
-h2 {
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 36px;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-h3 {
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 28px;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-p {
-  font-size: 22px;
-  line-height: 26px;
-  text-align: center;
-}
-
-.header {
-
-}
-
-.logo-nav {
-
-}
-
-.navigation {
-
-}
-
 .navigation-list {
   list-style-type: none;
-
 }
 
 .navigation-link {
@@ -76,6 +41,7 @@ p {
 
 .navigation-user {
   list-style-type: none;
+
 }
 
 .navigation-join {
@@ -88,7 +54,6 @@ p {
   text-align: center;
   color: #ffffff;
   border-radius: 4px;
-
 }
 
 .main-img {
@@ -96,7 +61,31 @@ p {
   background-image: url(../images/index-background.jpg);
   background-size: 100% auto;
   background-repeat: no-repeat;
-  display: block;
+}
+
+.main-title h2 {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.main-title p {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+}
+
+.advantages {
+  text-align: center;
+}
+
+.advantages h3 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
 }
 
 .advantages p {
@@ -104,35 +93,48 @@ p {
   line-height: 21px;
 }
 
-.advantages-list {
-  text-decoration: none;
-  list-style-type: none;
-  text-align: center;
-
-}
-
 .advantages-1 {
   background-color: #82B3D3;
+}
 
+.advantages-2 {
+  background: rgba(131, 179, 211, 0.12);
+}
 
+.advantages-3 {
+  background: rgba(131, 179, 211, 0.2);
+}
+
+.advantages-4 {
+  background: rgba(131, 179, 211, 0.12);
 }
 
 .advantages-5 {
   background-color: #82B3D3;
 }
 
-.service p {
+.service-list h3 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+.service-list p {
   font-size: 18px;
   line-height: 21px;
 }
 
 .service-list {
+  background: rgba(131, 179, 211, 0.12);
   text-decoration: none;
   list-style-type: none;
   text-align: center;
 }
 
-
+.service-2 {
+  background-color: #ffffff;
+}
 
 .search-hotel {
   background-color: #756157;
@@ -149,11 +151,14 @@ p {
 .subscription {
   color: #ffffff;
   background-color: #82B3D3;
-  background-image: url(../images/);
+  background-size: 100% auto;
+  background-image: url(../images/subscribe.png);
+  background-repeat: no-repeat;
+  display: block;
 }
 
-.email {
-
+.button {
+  background-color: #82B3D3;
 }
 
 .newsletter-button {
@@ -161,9 +166,20 @@ p {
   font-size: 20px;
   line-height: 36px;
   text-transform: uppercase;
-  text-decoration: none;
   text-align: center;
   color: #ffffff;
+}
+
+.vkontakte {
+  background-image: url(../images/vk-icon.svg);
+}
+
+.telegram {
+  background-image: url(../images/tg-icon.svg);
+}
+
+.youtube {
+  background-image: url(../images/vk-icon.svg);
 }
 
 .phone {
@@ -172,5 +188,8 @@ p {
   text-align: center;
   text-decoration: none;
   color: black;
+}
 
+.logo-htmlacademy {
+  background-image: url(../images/HTML\ Academy.png);
 }
