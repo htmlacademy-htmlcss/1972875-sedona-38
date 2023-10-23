@@ -82,7 +82,12 @@ body {
 
 .slogan img {
   display: block;
-  margin: auto;
+  margin: 0 auto;
+}
+
+.main-title {
+  margin: 0 auto;
+  text-align: center;
 }
 
 .main-title h2 {
@@ -90,13 +95,27 @@ body {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
-  text-align: center;
 }
 .main-title p {
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
-  text-align: center;
+}
+
+.heading {
+  height: 261px;
+}
+
+.welcome {
+  height: 246px;
+}
+
+.choice {
+  height: 406px;
+}
+
+.post {
+  height: 415px;
 }
 
 .advantages h3 {
@@ -168,15 +187,11 @@ body {
   background-size: 100% auto;
 }
 
-.main-title {
-  height: 246px;
-  text-align: center;
-}
-
 .service-list {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+
 }
 
 .service-list li {
@@ -188,8 +203,8 @@ body {
 .service-info {
   display: flex;
   flex-direction: column;
-
-  margin: auto;
+  padding-top: 81px;
+  margin: 0 auto;
   width: 230px;
   height: 223px;
 
@@ -198,7 +213,7 @@ body {
 .service-info img {
   width: 75px;
   height: 72px;
-  margin: auto;
+  margin: 0 auto;
 }
 
 .service-info p {
@@ -214,18 +229,20 @@ body {
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .service-list p {
   font-size: 18px;
   line-height: 21px;
+  text-align: center;
 }
 
 .service-list {
   background: rgba(131, 179, 211, 0.12);
   text-decoration: none;
   list-style-type: none;
-  text-align: center;
+
 }
 
 .search-hotel {
@@ -235,6 +252,7 @@ body {
   border-radius: 4px;
   position: relative;
   margin: auto;
+  margin-top: 54px;
   background-color: #756157;
   font-weight: 700;
   font-size: 20px;
@@ -243,6 +261,7 @@ body {
   text-decoration: none;
   text-align: center;
   color: #ffffff;
+
 }
 
 .subscription {
@@ -256,7 +275,6 @@ body {
 
 .button {
   background-color: #82B3D3;
-
 }
 
 .newsletter-button {
