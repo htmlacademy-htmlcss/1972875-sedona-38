@@ -14,48 +14,64 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  background-color: rgba(242, 242, 242, 1);
+  margin: 0 auto;
+
+}
+
+.body-container {
   font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-style: normal;
   color: black;
   background-color: #ffffff;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  margin-right: 40px;
+  margin-left: 40px;
 }
 
 .visually-hidden {
   visibility: hidden;
 }
 /*общая навигация*/
+.page-header {
+  display: flex;
+}
+
 .logo-nav {
-  display: block;
+  display: flex;
+  align-items: flex-start;
   margin-left: 70px;
+  width: 140px;
 }
 
-
-.navigation li {
-  display: block;
+.navigation {
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
 }
-.navigation a {
-  display: block;
-}
-
 
 .navigation-list {
   list-style-type: none;
-}
-
-.navigation-link {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 24px;
-  text-align: center;
-  color: inherit;
-  text-decoration: none;
+  width: 850px;
+  margin: 0;
+  padding: 0;
 }
 
 .navigation-user {
   list-style-type: none;
-
+  margin: 0;
+  padding: 0;
+  max-width: 330px;
+  margin-right: auto;
 }
 
 .navigation-join {
@@ -72,10 +88,14 @@ body {
 /*общая навигация закончилась*/
 
 /*index.html*/
+
+.main-container {
+  flex-grow: 1;
+}
 .main-img {
   background-color: #82B3D3;
   background-image: url(../images/index-background.jpg);
-  background-size: 100% auto;
+  background-size: cover;
   background-repeat: no-repeat;
   height: 485px;
 }
@@ -83,11 +103,18 @@ body {
 .slogan img {
   display: block;
   margin: 0 auto;
+  margin-top: 51px;
+}
+
+.book-style img {
+  display: block;
+  margin: 0 auto;
+  height: 57px;
+  width: 100%;
 }
 
 .main-title {
-  margin: 0 auto;
-  text-align: center;
+  box-sizing: border-box;
 }
 
 .main-title h2 {
@@ -95,27 +122,23 @@ body {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
+  margin: 0;
+  padding: 0;
 }
 .main-title p {
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
+  margin: 0;
+  padding: 0;
+  padding-top: 20px;
 }
 
-.heading {
+.main-title.town {
   height: 261px;
-}
-
-.welcome {
-  height: 246px;
-}
-
-.choice {
-  height: 406px;
-}
-
-.post {
-  height: 415px;
+  padding-top: 69px;
+  padding-bottom: 69px;
+  text-align: center;
 }
 
 .advantages h3 {
@@ -123,42 +146,55 @@ body {
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .advantages p {
   font-size: 18px;
   line-height: 21px;
-  margin: auto;
+  text-align: center;
+}
+
+.advantages {
+  box-sizing: border-box;
 }
 
 .advantages-1 {
   background-color: #82B3D3;
   display: flex;
   justify-content: space-between;
+  height: 385px;
 }
 
 .advantages-content {
-  width: 400px;
-  height: 385px;
-  text-align: center;
+  box-sizing: border-box;
+  width: 230px;
+  height: 181px;
+  margin-top: 102px;
+  margin-left: 85px;
 }
 
 .advantages-1 img {
-  display: block;
-  background-size: 100% auto;
+  background-size: cover;
+  width: 800px;
+  margin: 0;
+  padding: 0;
 }
 
 .advantages-wrapper {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+
 }
 
 .advantages-2 {
   background: rgba(131, 179, 211, 0.12);
-  width: 400px;
-  height: 385px;
+  box-sizing: border-box;
+  width: 230px;
+  height: 160px;
   text-align: center;
+
 }
 
 .advantages-3 {
@@ -187,6 +223,13 @@ body {
   background-size: 100% auto;
 }
 
+.main-title.welcome {
+  height: 246px;
+  padding-top: 64px;
+  padding-bottom: 64px;
+  text-align: center;
+}
+
 .service-list {
   display: flex;
   justify-content: space-between;
@@ -202,12 +245,10 @@ body {
 
 .service-info {
   display: flex;
-  flex-direction: column;
   padding-top: 81px;
   margin: 0 auto;
   width: 230px;
   height: 223px;
-
 }
 
 .service-info img {
@@ -245,6 +286,13 @@ body {
 
 }
 
+.main-title.choice {
+  height: 406px;
+  padding-top: 96px;
+  padding-bottom: 96px;
+  text-align: center;
+}
+
 .search-hotel {
   display: block;
   width: 376px;
@@ -267,10 +315,16 @@ body {
 .subscription {
   color: #ffffff;
   background-color: #82B3D3;
-  background-size: 100% auto;
+  background-size: cover;
   background-image: url(../images/subscribe.png);
   background-repeat: no-repeat;
   height: 415px;
+}
+
+.main-title.post {
+  padding-top: 96px;
+  padding-bottom: 104px;
+  text-align: center;
 }
 
 .button {
@@ -447,6 +501,8 @@ body {
 
 
 /* общий футер*/
+
+
 .vkontakte {
   background-image: url(../images/vk-icon.svg);
 }
