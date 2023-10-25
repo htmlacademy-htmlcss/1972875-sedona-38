@@ -310,7 +310,6 @@ body {
   margin: 0 auto;
   margin-top: 54px;
   padding-top: 8px;
-
 }
 
 .subscription {
@@ -323,13 +322,43 @@ body {
 }
 
 .main-title.post {
-  padding-top: 96px;
-  padding-bottom: 104px;
+  margin: 0 auto;
+  margin-top: 96px;
+  padding: 0;
   text-align: center;
+}
+
+.subscription-join {
+  display: flex;
+  box-sizing: border-box;
+  width: 684px;
+  height: 52px;
+  margin: 0 auto;
+  margin-top: 54px;
+  padding: 0;
+  border-radius: 0, 4px, 4px, 0;
+}
+
+.email {
+  width: 452px;
+  height: 52px;
+  margin: 0;
+  padding: 0;
+  padding-left: 20px;
+  border: 0;
+}
+
+.email .placeholder {
+  font-size: 18px;
+  line-height: 14px;
 }
 
 .button {
   background-color: #82B3D3;
+  width: 232px;
+  border: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .newsletter-button {
@@ -340,6 +369,83 @@ body {
   text-align: center;
   color: #ffffff;
 }
+
+.sticky-footer {
+  width: 100%;
+  height: 120px;
+}
+
+.footer-wrapper {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  width: 1060px;
+  height: 50px;
+  margin: 0 auto;
+  margin-top: 40px;
+  padding: 0;
+  background-color: tomato;
+}
+
+.contacts {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.network-link {
+  box-sizing: border-box;
+  width: 47px;
+  height: 40px;
+  padding-top: 11px;
+  padding-left: 12px;
+}
+
+.network-link a {
+  display: block;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.vkontakte {
+  background-image: url(../images/vk-icon.svg);
+  width: 24px;
+  height: 14px;
+}
+
+.telegram {
+  background-image: url(../images/tg-icon.svg);
+  width: 18px;
+  height: 15px;
+}
+
+.youtube {
+  background-image: url(../images/yt-icon.svg);
+  width: 22px;
+  height: 17px;
+}
+
+.phone {
+  display: block;
+  width: 720px;
+  font-size: 40px;
+  line-height: 40px;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+}
+
+.logo-htmlacademy {
+  display: flex;
+  background-image: url(../images/HTML-Academy.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 115px;
+  height: 33px;
+}
+
+
 
 /*catalog.html*/
 
@@ -502,28 +608,3 @@ body {
 
 
 /* общий футер*/
-
-
-.vkontakte {
-  background-image: url(../images/vk-icon.svg);
-}
-
-.telegram {
-  background-image: url(../images/tg-icon.svg);
-}
-
-.youtube {
-  background-image: url(../images/vk-icon.svg);
-}
-
-.phone {
-  font-size: 40px;
-  line-height: 40px;
-  text-align: center;
-  text-decoration: none;
-  color: black;
-}
-
-.logo-htmlacademy {
-  background-image: url(../images/HTML\ Academy.png);
-}
