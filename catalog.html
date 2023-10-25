@@ -7,34 +7,35 @@
   <title>Каталог</title>
 </head>
 <body>
-  <header class="header">
-    <a class="logo-nav" href="index.html"><img src="images/logo.svg" alt="Логотип гостиницы Седона"></a>
-    <nav class="navigation">
-      <ul class="navigation-list">
-        <li class="navigation-item">
-          <a class="navigation-link" href="index.html">Главная</a>
-        </li>
-        <li class="navigation-item">
-          <a class="navigation-link" href="about.html">О Седоне</a>
-        </li>
-        <li class="navigation-item">
-          <a class="navigation-link navigation-link-current" href="catalog.html">Гостиницы</a>
-        </li>
-      </ul>
-      <ul class="navigation-user">
-        <li class="navigation-item-user">
-          <a class="navigation-src" href="#"><img src="images/src-icon.svg" alt=""></a>
-        </li>
-        <li class="navigation-item-user">
-          <a class="navigation-like" href="#"><img src="images/heart-icon.svg" alt=""></a>
-          <img src="images/number-icon.svg" alt="">
-        </li>
-        <li class="navigation-item-user-join">
-          <a class="navigation-join" href="#">Хочу сюда!</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
+  <section class="body-container">
+    <header class="page-header">
+      <a class="logo-nav" href="index.html"><img src="images/logo.svg" alt="Логотип гостиницы Седона"></a>
+      <nav class="navigation">
+        <ul class="navigation-list">
+          <li class="navigation-item main">
+            <a class="navigation-link" href="index.html">Главная</a>
+          </li>
+          <li class="navigation-item for-us">
+            <a class="navigation-link" href="about.html">О Седоне</a>
+          </li>
+          <li class="navigation-item hotels">
+            <a class="navigation-link" href="catalog.html">Гостиницы</a>
+          </li>
+        </ul>
+        <ul class="navigation-user">
+          <li class="navigation-item-user">
+            <a class="navigation-src" href="#"><img src="images/src-icon.svg" alt=""></a>
+          </li>
+          <li class="navigation-item-user">
+            <a class="navigation-like" href="#"><img src="images/heart-icon.svg" alt=""></a>
+            <img src="images/number-icon.svg" alt="">
+          </li>
+          <li class="navigation-item-user-join">
+            <a class="navigation-join" href="#">Хочу сюда!</a>
+          </li>
+        </ul>
+        </nav>
+    </header>
 
   <main class="main-inner">
     <section class="inner-header">
@@ -241,13 +242,28 @@
     </button>
   </section>
   <footer>
-    <div class="network-wrapper">
-      <a class="vkontakte" href="https://vk.com/htmlacademy"></a>
-      <a class="telegram" href="https://t.me/htmlacademy"></a>
-      <a class="youtube" href="https://www.youtube.com/user/htmlacademyru"></a>
-    </div>
-    <a class="phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-    <a class="logo-htmlacademy" href="https://htmlacademy.ru/"></a>
+    <section class="sticky-footer">
+      <div class="footer-wrapper">
+        <ul class="contacts">
+          <li class="network-link">
+            <a class="vkontakte" href="https://vk.com/htmlacademy"></a>
+          </li>
+          <li class="network-link">
+            <a class="telegram" href="https://t.me/htmlacademy"></a>
+          </li>
+          <li class="network-link">
+            <a class="youtube" href="https://www.youtube.com/user/htmlacademyru"></a>
+          </li>
+          <li>
+            <a class="phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+          </li>
+          <li>
+            <a class="logo-htmlacademy" href="https://htmlacademy.ru/"></a>
+          </li>
+        </ul>
+      </div>
+    </section>
   </footer>
+  </section>
 </body>
 </html>

@@ -19,7 +19,7 @@ html {
 }
 
 body {
-  background-color: rgba(242, 242, 242, 1);
+  background-color: aquamarine;
 }
 
 .body-container {
@@ -37,41 +37,86 @@ body {
 
 .visually-hidden {
   visibility: hidden;
+  margin: 0;
+  padding: 0;
 }
 /*общая навигация*/
 .page-header {
   display: flex;
+  box-sizing: border-box;
+  width: 100%;
+  height: 64px;
+  margin: o;
+  padding: 0;
 }
 
 .logo-nav {
-  display: flex;
-  align-items: flex-start;
+  margin-top: 0;
   margin-left: 70px;
+  margin-right: 28px;
   width: 140px;
 }
 
 .navigation {
   display: flex;
-  width: 100%;
-  margin: 0 auto;
+  width: 1200px
+}
+
+.navigation li {
+  display: block;
+}
+
+.navigation a {
+  display: block;
 }
 
 .navigation-list {
+  display: flex;
   list-style-type: none;
-  width: 850px;
+  width: 100%;
   margin: 0;
   padding: 0;
+}
+
+.navigation-link {
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.navigation-item {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.navigation-item.main {
+  width: 100px;
+}
+
+.navigation-item.for-us {
+  width: 114px;
+}
+
+.navigation-item.hotels {
+  width: 125px;
 }
 
 .navigation-user {
+  display: flex;
+  width: 268px;
   list-style-type: none;
   margin: 0;
   padding: 0;
-  max-width: 330px;
-  margin-right: auto;
+}
+
+.navigation-item-user {
+  width: 44px;
 }
 
 .navigation-join {
+  box-sizing: border-box;
   background-color: #756157;
   font-weight: 700;
   font-size: 16px;
@@ -80,8 +125,24 @@ body {
   text-decoration: none;
   text-align: center;
   color: #ffffff;
+  width: 160px;
+  height: 36px;
   border-radius: 4px;
+  padding-top: 8px;
 }
+
+.navigation-item-user-join {
+  width: 160px;
+  height: 36px;
+  padding: 0;
+  padding-top: 14px;
+  margin: 0;
+  margin-right: 70px;
+  margin-left: 20px;
+}
+
+
+
 /*общая навигация закончилась*/
 
 /*index.html*/
@@ -102,7 +163,7 @@ body {
   width: 458px;
   height: 352px;
   margin: 0 auto;
-  margin-top: 51px;
+  margin-top: 52px;
 }
 
 .book-style img {
@@ -197,6 +258,10 @@ body {
 .advantages-1 {
   background-color: #82B3D3;
   width: 400px;
+}
+
+.another {
+  color: #ffffff;
 }
 
 .advantages-2 {
@@ -295,6 +360,7 @@ body {
 }
 
 .search-hotel {
+  box-sizing: border-box;
   display: block;
   width: 376px;
   height: 52px;
@@ -383,8 +449,9 @@ body {
   height: 50px;
   margin: 0 auto;
   margin-top: 40px;
+  margin-left: 70px;
   padding: 0;
-  background-color: tomato;
+  background-color: aqua;
 }
 
 .contacts {
@@ -398,8 +465,8 @@ body {
   box-sizing: border-box;
   width: 47px;
   height: 40px;
-  padding-top: 11px;
-  padding-left: 12px;
+  margin: 0;
+  padding: 0;
 }
 
 .network-link a {
@@ -428,7 +495,7 @@ body {
 
 .phone {
   display: block;
-  width: 720px;
+  margin: 0 auto;
   font-size: 40px;
   line-height: 40px;
   text-align: center;
@@ -437,13 +504,24 @@ body {
 }
 
 .logo-htmlacademy {
-  display: flex;
+  display: block;
+
+
+
+}
+
+.logo-htmlacademy img {
   background-image: url(../images/HTML-Academy.png);
   background-repeat: no-repeat;
-  background-size: cover;
   width: 115px;
   height: 33px;
+  margin: 0;
+  margin-right: 70px;
+  padding: 0;
+  padding-top: 9px;
+
 }
+
 
 
 
