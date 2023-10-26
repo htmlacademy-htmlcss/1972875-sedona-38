@@ -71,20 +71,20 @@
             </ul>
          </fieldset>
          <fieldset class="filter-housing">
-            <legend class="filter-housing-title filter-place-title">Тип жилья:
+            <legend class="filter-place-title">Тип жилья:
             </legend>
-            <ul class="filter-housing-list filter-place-list">
-              <li class="filter-housing-item">
+            <ul class="filter-place-list">
+              <li class="filter-place-item">
                 <label class="control">
                   <input class="control-input" type="radio" name="hotel" value="Гостиница" checked>Гостиница
                 </label>
               </li>
-              <li class="filter-housing-item">
+              <li class="filter-place-item">
                 <label class="control">
                   <input class="control-input" type="radio" name="motel" value="Мотель">Мотель
                 </label>
               </li>
-              <li class="filter-housing-item">
+              <li class="filter-place-item">
                 <label class="control">
                   <input class="control-input" type="radio" name="apartments" value="Апартаменты">Апартаменты
                 </label>
@@ -92,18 +92,18 @@
             </ul>
           </fieldset>
           <fieldset class="filter-hotel-price">
-            <legend class="filter-hotel-price-title filter-place-title">Стоимость, ₽:
+            <legend class="filter-place-title">Стоимость, ₽:
             </legend>
-            <input type="text" name="min-price" id="min-price-field" value="0" placeholder="от">
-              <span class="filter-hotel-price-min">от</span>
-            <input type="text" name="max-price" id="max-price-field" value="9000" placeholder="до">
-              <span class="filter-hotel-price-max">до</span>
+            <div class="price-field">
+              <input class="input-price" type="text" name="min-price" id="min-price-field" value="0" placeholder="от">
+              <input class="input-price" type="text" name="max-price" id="max-price-field" value="9000" placeholder="до">
+            </div>
+            <div class="range-slider">
+              <input type="range" id="price-slider-field" name="price-slider" min="0" max="9000">
+              <button class="slider-but-1"></button>
+              <button class="slider-but-2"></button>
+            </div>
           </fieldset>
-          <div class="range-slider">
-            <input type="range" id="price-slider-field" name="price-slider" min="0" max="9000">
-            <button class="slider-but-1"></button>
-            <button class="slider-but-2"></button>
-          </div>
           <div class="hotel-price-buttons">
             <button class="button-go" type="submit">Применить</button>
             <button class="button-fale" type="submit">Сбросить</button>

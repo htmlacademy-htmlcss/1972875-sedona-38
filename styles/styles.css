@@ -639,7 +639,7 @@ body {
 }
 
 .filter-housing {
-  display: block;
+  box-sizing: border-box;
   width: 150px;
   height: 157px;
   margin: 0;
@@ -647,18 +647,57 @@ body {
   border: none;
 }
 
+.filter-hotel-price {
+  box-sizing: border-box;
+  width: 288px;
+  height: 160px;
+  border: none;
+  padding: 0;
+  margin: 0;
+  margin-left: 140px;
+}
 
+.price-field {
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
+.input-price {
+  width: 141px;
+  height: 48px;
+  background: rgba(242, 242, 242, 1);
+  border: none;
+  border-right: black;
+  border-radius: 4px, 0, 0, 4px;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 14px;
+}
 
+.range-slider {
+  box-sizing: border-box;
+  height: 20px;
+  margin-top: 36px;
+}
 
-
-
-
-
-
+.hotel-price-buttons {
+  display: block;
+  box-sizing: border-box;
+  width: 192px;
+}
 
 .button-go {
+  width: 191px;
+  height: 36px;
   background-color: rgba(130, 179, 211, 1);
+  padding: 0;
+  margin: 0;
+  margin-top: 56px;
+  border: 0;
   color: #ffffff;
   font-weight: 700;
   font-size: 16px;
@@ -668,7 +707,13 @@ body {
 }
 
 .button-fale {
+  width: 191px;
+  height: 36px;
   background-color: rgba(0, 0, 0, 0);
+  padding: 0;
+  margin: 0;
+  margin-top: 32px;
+  border: 0;
   color: #ffffff;
   font-weight: 700;
   font-size: 16px;
