@@ -19,7 +19,9 @@ html {
 }
 
 body {
-  background-color: aquamarine;
+  background-color: rgba(242, 242, 242, 1);
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+  margin: 0;
 }
 
 .body-container {
@@ -47,7 +49,7 @@ body {
   box-sizing: border-box;
   width: 100%;
   height: 64px;
-  margin: o;
+
   padding: 0;
 }
 
@@ -586,6 +588,7 @@ body {
 }
 
 .catalog-hotel-choice {
+  display: flex;
   box-sizing: border-box;
   flex-wrap: wrap;
   width: 1060px;
@@ -685,7 +688,8 @@ body {
 }
 
 .hotel-price-buttons {
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
   box-sizing: border-box;
   width: 192px;
 }
@@ -696,12 +700,12 @@ body {
   background-color: rgba(130, 179, 211, 1);
   padding: 0;
   margin: 0;
-  margin-top: 56px;
+
   border: 0;
   color: #ffffff;
   font-weight: 700;
   font-size: 16px;
-  line-height: 20;
+  line-height: 20px;
   text-transform: uppercase;
   text-align: center;
 }
@@ -709,15 +713,15 @@ body {
 .button-fale {
   width: 191px;
   height: 36px;
-  background-color: rgba(0, 0, 0, 0);
+   background-color: rgba(130, 179, 211, 1);
   padding: 0;
   margin: 0;
-  margin-top: 32px;
+
   border: 0;
   color: #ffffff;
   font-weight: 700;
   font-size: 16px;
-  line-height: 20;
+  line-height: 20px;
   text-transform: uppercase;
   text-align: center;
 }
