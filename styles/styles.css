@@ -20,7 +20,6 @@ html {
 
 body {
   background-color: rgba(242, 242, 242, 1);
-  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
   margin: 0;
 }
 
@@ -30,6 +29,7 @@ body {
   font-style: normal;
   color: black;
   background-color: #ffffff;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
   display: flex;
   flex-direction: column;
   min-height: 100%;
@@ -130,19 +130,16 @@ body {
   text-align: center;
   color: #ffffff;
   width: 160px;
-  height: 36px;
   border-radius: 4px;
-  padding-top: 8px;
+  padding: 8px 0;
 }
 
 .navigation-item-user-join {
   width: 160px;
-  height: 36px;
   padding: 0;
   padding-top: 14px;
   margin: 0;
   margin-right: 70px;
-
 }
 
 /*общая навигация закончилась*/
@@ -165,7 +162,6 @@ body {
 .slogan {
   display: block;
   width: 458px;
-  height: 352px;
   margin: 0 auto;
   padding-top: 52px;
 }
@@ -200,7 +196,6 @@ body {
 }
 
 .main-title.town {
-  height: 261px;
   padding-top: 69px;
   padding-bottom: 69px;
   text-align: center;
@@ -235,19 +230,16 @@ body {
   text-align: center;
 }
 
-.advantages-content li {
-  min-height: 385px;
-}
-
 .advantages-over {
+  box-sizing: border-box;
   width: 230px;
-  height: 160px;
-  margin-left: 85px;
-  margin-top: 112px;
+  margin: 0 auto;
+  padding: 102px 0;
 }
 
 .advantages-over.another {
-  margin-top: 102px;
+  box-sizing: border-box;
+  padding: 102px 0;
 }
 
 .advantages-img {
@@ -255,9 +247,6 @@ body {
   background-color: #82B3D3;
   background-size: cover;
   width: 800px;
-  height: 385px;
-  margin: 0;
-  padding: 0;
 }
 
 .advantages-1 {
@@ -290,7 +279,7 @@ body {
 }
 
 .main-title.welcome {
-  height: 246px;
+  min-height: 246px;
   padding-top: 64px;
   padding-bottom: 64px;
   text-align: center;
@@ -323,22 +312,19 @@ body {
   line-height: 21px;
   text-align: center;
   margin: 0;
-
   padding: 0;
 }
 
 .service-list li {
   width: 400px;
-  height: 385px;
+  min-height: 385px;
 }
 
 .service-info {
   box-sizing: border-box;
   width: 230px;
-  height: 223px;
   margin: 0 auto;
-  padding: 0;
-  margin-top: 81px;
+  padding: 81px 0;
 }
 
 .service-info img {
@@ -359,7 +345,6 @@ body {
 }
 
 .main-title.choice {
-  height: 406px;
   padding-top: 96px;
   padding-bottom: 96px;
   text-align: center;
@@ -381,7 +366,7 @@ body {
   color: #ffffff;
   margin: 0 auto;
   margin-top: 54px;
-  padding-top: 8px;
+  padding: 8px 0;
 }
 
 .subscription {
@@ -391,7 +376,6 @@ body {
   background-image: url(../images/subscribe.png);
   background-repeat: no-repeat;
   padding-top: 96px;
-  min-height: 415px;
 }
 
 .main-title.post {
@@ -407,7 +391,7 @@ body {
   width: 684px;
   height: 52px;
   margin: 0 auto;
-  padding: 0;
+  margin-bottom: 104px;
 }
 
 .email {
@@ -453,7 +437,7 @@ body {
 
 .sticky-footer {
   width: 100%;
-  min-height: 120px;
+
 }
 
 .footer-wrapper {
@@ -461,16 +445,15 @@ body {
   display: flex;
   justify-content: space-between;
   width: 1060px;
-  height: 50px;
+  min-height: 50px;
   margin: 0 auto;
   margin-top: 40px;
-
-  background-color: tomato;
+  margin-bottom: 30px;
 }
 
 .contacts {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -479,7 +462,6 @@ body {
 .network-link {
   box-sizing: border-box;
   width: 47px;
-  height: 40px;
   margin: 0;
   padding: 0;
 }
@@ -488,6 +470,8 @@ body {
   display: block;
   background-repeat: no-repeat;
   background-size: cover;
+  margin: 0 auto;
+  margin-top: 13px;
 }
 
 .vkontakte {
@@ -526,11 +510,9 @@ body {
   padding-top: 9px;
   width: 115px;
   height: 33px;
-
 }
 
 .logo-htmlacademy img {
-  background-image: url(../images/HTML-Academy.png);
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0 auto;
