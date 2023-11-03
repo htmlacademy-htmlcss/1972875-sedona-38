@@ -19,7 +19,8 @@ html {
 }
 
 body {
-  background-color: aquamarine;
+  background-color: rgba(242, 242, 242, 1);
+  margin: 0;
 }
 
 .body-container {
@@ -28,6 +29,7 @@ body {
   font-style: normal;
   color: black;
   background-color: #ffffff;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
   display: flex;
   flex-direction: column;
   min-height: 100%;
@@ -46,8 +48,7 @@ body {
   display: flex;
   box-sizing: border-box;
   width: 100%;
-  height: 64px;
-  margin: o;
+  min-height: 64px;
   padding: 0;
 }
 
@@ -56,6 +57,7 @@ body {
   margin-left: 70px;
   margin-right: 28px;
   width: 140px;
+  height: 64px;
 }
 
 .navigation {
@@ -114,6 +116,7 @@ body {
 
 .navigation-item-user {
   width: 44px;
+  padding-right: 20px;
 }
 
 .navigation-join {
@@ -127,19 +130,16 @@ body {
   text-align: center;
   color: #ffffff;
   width: 160px;
-  height: 36px;
   border-radius: 4px;
-  padding-top: 8px;
+  padding: 8px 0;
 }
 
 .navigation-item-user-join {
   width: 160px;
-  height: 36px;
   padding: 0;
   padding-top: 14px;
   margin: 0;
   margin-right: 70px;
-  margin-left: 20px;
 }
 
 /*общая навигация закончилась*/
@@ -154,23 +154,24 @@ body {
   background-image: url(../images/index-background.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 485px;
+  margin: 0;
+  padding: 0;
+  min-height: 485px;
 }
 
-.slogan img {
+.slogan {
   display: block;
   width: 458px;
-  height: 352px;
   margin: 0 auto;
-  margin-top: 52px;
+  padding-top: 52px;
 }
 
-.book-style img {
+.book-style {
   display: block;
   margin: 0 auto;
-  height: 57px;
   width: 100%;
 }
+
 
 .main-title {
   box-sizing: border-box;
@@ -183,6 +184,7 @@ body {
   text-transform: uppercase;
   margin: 0;
   padding: 0;
+  padding-bottom: 20px;
 }
 .main-title p {
   font-weight: 400;
@@ -190,11 +192,10 @@ body {
   line-height: 26px;
   margin: 0;
   padding: 0;
-  padding-top: 20px;
+
 }
 
 .main-title.town {
-  height: 261px;
   padding-top: 69px;
   padding-bottom: 69px;
   text-align: center;
@@ -229,19 +230,16 @@ body {
   text-align: center;
 }
 
-.advantages-content li {
-  height: 385px;
-}
-
 .advantages-over {
+  box-sizing: border-box;
   width: 230px;
-  height: 160px;
-  margin-left: 85px;
-  margin-top: 112px;
+  margin: 0 auto;
+  padding: 102px 0;
 }
 
 .advantages-over.another {
-  margin-top: 102px;
+  box-sizing: border-box;
+  padding: 102px 0;
 }
 
 .advantages-img {
@@ -249,9 +247,6 @@ body {
   background-color: #82B3D3;
   background-size: cover;
   width: 800px;
-  height: 385px;
-  margin: 0;
-  padding: 0;
 }
 
 .advantages-1 {
@@ -284,7 +279,7 @@ body {
 }
 
 .main-title.welcome {
-  height: 246px;
+  min-height: 246px;
   padding-top: 64px;
   padding-bottom: 64px;
   text-align: center;
@@ -298,7 +293,7 @@ body {
   list-style-type: none;
   margin: 0 auto;
   padding: 0;
-  justify-content: center;
+  justify-content: space-around;
 }
 
 .service-info h3 {
@@ -308,7 +303,7 @@ body {
   text-transform: uppercase;
   text-align: center;
   margin: 0;
-  margin-top: 30px;
+  margin-bottom: 30px;
   padding: 0;
 }
 
@@ -317,22 +312,19 @@ body {
   line-height: 21px;
   text-align: center;
   margin: 0;
-  margin-top: 30px;
   padding: 0;
 }
 
 .service-list li {
   width: 400px;
-  height: 385px;
+  min-height: 385px;
 }
 
 .service-info {
   box-sizing: border-box;
   width: 230px;
-  height: 223px;
   margin: 0 auto;
-  padding: 0;
-  margin-top: 81px;
+  padding: 81px 0;
 }
 
 .service-info img {
@@ -340,6 +332,7 @@ body {
   width: 75px;
   height: 72px;
   margin: 0 auto;
+  margin-bottom: 30px;
 
 }
 
@@ -352,7 +345,6 @@ body {
 }
 
 .main-title.choice {
-  height: 406px;
   padding-top: 96px;
   padding-bottom: 96px;
   text-align: center;
@@ -374,7 +366,7 @@ body {
   color: #ffffff;
   margin: 0 auto;
   margin-top: 54px;
-  padding-top: 8px;
+  padding: 8px 0;
 }
 
 .subscription {
@@ -383,14 +375,14 @@ body {
   background-size: cover;
   background-image: url(../images/subscribe.png);
   background-repeat: no-repeat;
-  height: 415px;
+  padding-top: 96px;
 }
 
 .main-title.post {
   margin: 0 auto;
-  margin-top: 96px;
   padding: 0;
   text-align: center;
+  margin-bottom: 54px;
 }
 
 .subscription-join {
@@ -399,9 +391,7 @@ body {
   width: 684px;
   height: 52px;
   margin: 0 auto;
-  margin-top: 54px;
-  padding: 0;
-  border-radius: 0, 4px, 4px, 0;
+  margin-bottom: 104px;
 }
 
 .email {
@@ -414,6 +404,7 @@ body {
   font-family: inherit;
   font-size: 18px;
   line-height: 14px;
+  border-radius: 4px 0 0 4px;
 }
 
 .button {
@@ -422,6 +413,7 @@ body {
   border: 0;
   margin: 0;
   padding: 0;
+  border-radius: 0 4px 4px 0;
 }
 
 .newsletter-button {
@@ -445,7 +437,7 @@ body {
 
 .sticky-footer {
   width: 100%;
-  height: 120px;
+
 }
 
 .footer-wrapper {
@@ -453,16 +445,15 @@ body {
   display: flex;
   justify-content: space-between;
   width: 1060px;
-  height: 50px;
+  min-height: 50px;
   margin: 0 auto;
   margin-top: 40px;
-  margin-left: 70px;
-  background-color: tomato;
+  margin-bottom: 30px;
 }
 
 .contacts {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -471,7 +462,6 @@ body {
 .network-link {
   box-sizing: border-box;
   width: 47px;
-  height: 40px;
   margin: 0;
   padding: 0;
 }
@@ -480,6 +470,8 @@ body {
   display: block;
   background-repeat: no-repeat;
   background-size: cover;
+  margin: 0 auto;
+  margin-top: 13px;
 }
 
 .vkontakte {
@@ -518,11 +510,9 @@ body {
   padding-top: 9px;
   width: 115px;
   height: 33px;
-
 }
 
 .logo-htmlacademy img {
-  background-image: url(../images/HTML-Academy.png);
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0 auto;
@@ -586,6 +576,7 @@ body {
 }
 
 .catalog-hotel-choice {
+  display: flex;
   box-sizing: border-box;
   flex-wrap: wrap;
   width: 1060px;
@@ -685,7 +676,8 @@ body {
 }
 
 .hotel-price-buttons {
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
   box-sizing: border-box;
   width: 192px;
 }
@@ -696,12 +688,12 @@ body {
   background-color: rgba(130, 179, 211, 1);
   padding: 0;
   margin: 0;
-  margin-top: 56px;
+
   border: 0;
   color: #ffffff;
   font-weight: 700;
   font-size: 16px;
-  line-height: 20;
+  line-height: 20px;
   text-transform: uppercase;
   text-align: center;
 }
@@ -709,15 +701,15 @@ body {
 .button-fale {
   width: 191px;
   height: 36px;
-  background-color: rgba(0, 0, 0, 0);
+   background-color: rgba(130, 179, 211, 1);
   padding: 0;
   margin: 0;
-  margin-top: 32px;
+
   border: 0;
   color: #ffffff;
   font-weight: 700;
   font-size: 16px;
-  line-height: 20;
+  line-height: 20px;
   text-transform: uppercase;
   text-align: center;
 }
