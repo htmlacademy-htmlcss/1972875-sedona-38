@@ -680,6 +680,7 @@ body {
 
 .button {
   display: block;
+  background-color: #82B3D3;
   width: 191px;
   height: 36px;
   color: #ffffff;
