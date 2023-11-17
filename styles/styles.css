@@ -49,7 +49,7 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-/*общая навигация*/
+
 
 .page-header {
   display: flex;
@@ -146,6 +146,7 @@ body {
   background-color: #7DB54F;
   border-radius: 50%;
   width: 20px;
+  height: 20px;
   font-size: 10px;
   line-height: 10px;
   color: #ffffff;
@@ -491,36 +492,36 @@ body {
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
   width: 1060px;
   margin: 0 auto;
   margin-top: 40px;
   margin-bottom: 30px;
 }
 
-.footer-wrapper a {
-  display: block;
-  box-sizing: border-box;
-  position: relative;
-}
-
 .network {
   box-sizing: border-box;
   display: flex;
   justify-content: flex-start;
+  flex-wrap: wrap;
   width: 142px;
 }
 
 .vkontakte {
-  margin: 16px 11px;
+  width: 24px;
+  height: 14px;
+  margin: 18px 12px;
 }
 
 .telegram {
-  margin: 15px;
+  width: 18px;
+  height: 15.5px;
+  margin: 17px 11px;
 }
 
 .youtube {
-  margin: 15px 12px;
+  width: 22px;
+  height: 17px;
+  margin: 16px 12px;
 }
 
 .network-link:hover .network-icon {
@@ -538,7 +539,7 @@ body {
 .contacts {
   box-sizing: border-box;
   width: 720px;
-  padding: 5px 0;
+  padding: 0;
 }
 
 .phone {
@@ -690,6 +691,7 @@ body {
   position: relative;
   display: block;
 }
+
 .control-label {
   padding-left: 36px;
 }
@@ -709,6 +711,7 @@ body {
   background-image: url(../images/filter-place-icon.svg);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: 12px 10px;
 }
 
 .control:hover {
@@ -732,6 +735,8 @@ body {
   background-image: url(../images/radio-icon.svg);
   background-repeat: no-repeat;
   background-position: center;
+  width: 20px;
+  height: 20px;
 }
 
 .filter-place-item:last-child {
@@ -769,7 +774,6 @@ body {
 .input-price {
   box-sizing: border-box;
   width: 141px;
-
   border: none;
   padding: 12px 20px;
   background: rgba(242, 242, 242, 1);
@@ -797,11 +801,11 @@ body {
 
 .price-min,
 .price-max {
+  display: block;
   font-size: 18px;
   line-height: 24px;
   font-weight: inherit;
   color: rgba(0, 0, 0, 1);
-  display: block;
   position: absolute;
   width: 100%;
   top: 50%;
@@ -925,6 +929,7 @@ body {
   background-image: url(../images/check-icon.svg);
   background-repeat: no-repeat;
   background-position: right 20px center;
+  background-size: 13px 8px;
   appearance: none;
 }
 
@@ -945,10 +950,15 @@ body {
 .view-icon {
   box-sizing: border-box;
   width: 48px;
-  padding: 0 16px;
   background-color: #ffffff;
   border: 2px solid rgba(229, 229, 229, 1);
   border-radius: 4px;
+}
+
+.view-icon img {
+  width: 16px;
+  height: 15px;
+  background-position: center;
 }
 
 .view-icon-select {
@@ -992,12 +1002,17 @@ body {
   width: 300px;
 }
 
-.card-image {
-  background-color: rgba(130, 179, 211, 1);
-  background-size: cover;
-  background-repeat: no-repeat;
+.card-link img {
   width: 300px;
   height: 212px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.card-image {
+  background-color: rgba(130, 179, 211, 1);
+  width: 100%;
+  min-height: 212px;
   margin-bottom: 16px;
 }
 
