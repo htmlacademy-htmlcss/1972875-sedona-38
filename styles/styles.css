@@ -49,7 +49,7 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-/*общая навигация*/
+
 
 .page-header {
   display: flex;
@@ -146,6 +146,7 @@ body {
   background-color: #7DB54F;
   border-radius: 50%;
   width: 20px;
+  height: 20px;
   font-size: 10px;
   line-height: 10px;
   color: #ffffff;
@@ -491,36 +492,36 @@ body {
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
   width: 1060px;
   margin: 0 auto;
   margin-top: 40px;
   margin-bottom: 30px;
 }
 
-.footer-wrapper a {
-  display: block;
-  box-sizing: border-box;
-  position: relative;
-}
-
 .network {
   box-sizing: border-box;
   display: flex;
   justify-content: flex-start;
+  flex-wrap: wrap;
   width: 142px;
 }
 
 .vkontakte {
-  margin: 16px 11px;
+  width: 24px;
+  height: 14px;
+  margin: 18px 12px;
 }
 
 .telegram {
-  margin: 15px;
+  width: 18px;
+  height: 15.5px;
+  margin: 17px 11px;
 }
 
 .youtube {
-  margin: 15px 12px;
+  width: 22px;
+  height: 17px;
+  margin: 16px 12px;
 }
 
 .network-link:hover .network-icon {
@@ -537,18 +538,18 @@ body {
 
 .contacts {
   box-sizing: border-box;
-  width: 720px;
+  width: 803px;
   padding: 5px 0;
 }
 
 .phone {
-  margin: 0;
+  display: block;
   font-size: 40px;
   line-height: 40px;
   text-align: center;
   text-decoration: none;
   color: inherit;
-  padding: 5px 190px;
+  margin: 0 auto;
 }
 
 .phone:hover,
@@ -561,11 +562,13 @@ body {
 }
 
 .website {
-  width: 120px;
+  box-sizing: border-box;
+  width: 115px;
   padding: 8.5px 0;
 }
 
 .logo-htmlacademy {
+  display: block;
   width: 115px;
   height: 33px;
   margin-left: auto;
@@ -690,6 +693,7 @@ body {
   position: relative;
   display: block;
 }
+
 .control-label {
   padding-left: 36px;
 }
@@ -709,6 +713,7 @@ body {
   background-image: url(../images/filter-place-icon.svg);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: 12px 10px;
 }
 
 .control:hover {
@@ -732,6 +737,8 @@ body {
   background-image: url(../images/radio-icon.svg);
   background-repeat: no-repeat;
   background-position: center;
+  width: 20px;
+  height: 20px;
 }
 
 .filter-place-item:last-child {
@@ -769,7 +776,6 @@ body {
 .input-price {
   box-sizing: border-box;
   width: 141px;
-
   border: none;
   padding: 12px 20px;
   background: rgba(242, 242, 242, 1);
@@ -797,11 +803,11 @@ body {
 
 .price-min,
 .price-max {
+  display: block;
   font-size: 18px;
   line-height: 24px;
   font-weight: inherit;
   color: rgba(0, 0, 0, 1);
-  display: block;
   position: absolute;
   width: 100%;
   top: 50%;
@@ -925,6 +931,7 @@ body {
   background-image: url(../images/check-icon.svg);
   background-repeat: no-repeat;
   background-position: right 20px center;
+  background-size: 13px 8px;
   appearance: none;
 }
 
@@ -945,10 +952,15 @@ body {
 .view-icon {
   box-sizing: border-box;
   width: 48px;
-  padding: 0 16px;
   background-color: #ffffff;
   border: 2px solid rgba(229, 229, 229, 1);
   border-radius: 4px;
+}
+
+.view-icon img {
+  width: 16px;
+  height: 15px;
+  background-position: center;
 }
 
 .view-icon-select {
@@ -992,12 +1004,17 @@ body {
   width: 300px;
 }
 
-.card-image {
-  background-color: rgba(130, 179, 211, 1);
-  background-size: cover;
-  background-repeat: no-repeat;
+.card-link img {
   width: 300px;
   height: 212px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.card-image {
+  background-color: rgba(130, 179, 211, 1);
+  width: 100%;
+  min-height: 212px;
   margin-bottom: 16px;
 }
 
@@ -1188,6 +1205,10 @@ body {
   background-color: rgba(242, 242, 242, 0.8);
 }
 
+.modal-container-close {
+  display: none;
+}
+
 .modal {
   position: relative;
   margin: auto;
@@ -1218,8 +1239,13 @@ body {
   right: 52px;
 }
 
+.modal-content {
+  width: 577px;
+  box-sizing: border-box;
+}
+
 .modal-title {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -1229,11 +1255,26 @@ body {
 }
 
 .auth-form {
+  box-sizing: border-box;
   width: 100%;
 }
 
+.field-group {
+  display: flex;
+  margin: 0;
+}
+
+.field-group-1,
+.field-group-2 {
+  justify-content: space-between;
+  margin: 0;
+  margin-bottom: 4px;
+}
+
 .modal-form {
-  font-family: "PT Sans";
+  display: block;
+  box-sizing: border-box;
+  font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
@@ -1247,6 +1288,137 @@ body {
   background: rgba(242, 242, 242, 1);
   border-radius: 4px;
   border: none;
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.calendar {
+  display: block;
+  background-image: url(../images/date-icon.svg);
+  background-repeat: no-repeat;
+  width: 16px;
+  height: 15px;
+  position: absolute;
+  transform: translateY(-250%) translateX(535px);
+}
+
+.note-invalid,
+.note-true {
+  display: inline-block;
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+  margin-bottom: 23px;
+  padding-left: 157px;
+}
+
+.note-invalid {
+  color: rgba(255, 87, 87, 1);
+}
+
+.note-true {
+  color: rgba(51, 51, 51, 1);
+}
+
+.field-group-3 {
+  display: flex;
+  margin-bottom: 48px;
+}
+
+.adults {
+  margin-right: 46px;
+}
+
+.field-adults,
+.field-children {
+  width: 110px;
+  min-height: 48px;
+  padding: 14px 49px;
+  position: relative;
+}
+
+.auth-form-field.field-adults {
+  margin-right: 88px;
+}
+
+.children {
+  margin-right: 10px;
+}
+
+.remark {
+  width: 26px;
+  height: 26px;
+  display: block;
+  box-sizing: border-box;
+  border: 0;
+  border-radius: 50%;
+  background-color: rgba(131, 179, 211, 1);
+  margin: 11px 46px 11px 0;
+  background-image: url(../images/warning-icon.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  margin-right: 46px;
+}
+
+.form-adults,
+.form-children {
+  display: block;
+  box-sizing: border-box;
+  width: 40px;
+  min-height: 48px;
+  background-position: center;
+  position: absolute;
+}
+
+.minus-1,
+.minus-2 {
+  display: block;
+  background-image: url(../images/minus-icon.svg);
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+}
+
+.plus-1,
+.plus-2 {
+  display: block;
+  background-image: url(../images/plus-icon.svg);
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+}
+
+.form-adults.minus-1 {
+  top: 358px;
+  left: 222px;
+}
+
+.form-adults.plus-1 {
+  top: 358px;
+  left: 285px;
+}
+
+.form-children.minus-2 {
+  top: 357px;
+  right: 148px;
+}
+
+.form-children.plus-2 {
+  top: 357px;
+  right: 84px;
+}
+
+.remark-list {
+  display: block;
+  position: absolute;
+  right: 82px;
+  top: 391px;
 }
 
 .auth-form-register {
@@ -1264,112 +1436,4 @@ body {
   border-radius: 10px;
   padding: 18px 0;
   margin: 0;
-}
-
-.auth-form-field {
-  font-family: "PT Sans";
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 24px;
-  padding-left: 20px;
-}
-
-.field-group {
-  margin: 0;
-}
-
-.note-invalid,
-.note-true {
-  display: inline-block;
-  font-family: "PT Sans";
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 21px;
-  margin-bottom: 23px;
-  padding-left: 157px;
-}
-
-.note-invalid {
-  color: rgba(255, 87, 87, 1);
-}
-
-.note-true {
-  color: rgba(51, 51, 51, 1);
-}
-
-.field-group-1,
-.field-group-2 {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 4px;
-}
-
-.field-group-3 {
-  display: flex;
-  margin-bottom: 48px;
-}
-
-.calendar {
-  background-image: url(../images/date-icon.svg);
-  background-repeat: no-repeat;
-  width: 20px;
-  height: 20px;
-  transform: translateY(70% ) translateX(-200%);
-}
-
-
-
-.adults {
-  margin-right: 46px;
-  position: relative;
-}
-
-.field-adults {
-  margin-right: 88px;
-}
-
-.field-adults,
-.field-children {
-  width: 110px;
-  list-style-type: none;
-}
-
-.children {
-  margin-right: 10px;
-  position: relative;
-}
-
-.form-adults {
-  position: absolute;
-}
-
-.minus-1,
-.minus-2 {
-  background-image: url(../images/minus-icon.svg);
-  background-repeat: no-repeat;
-  width: 20px;
-  height: 20px;
-  top: 0;
-}
-
-.remark {
-  width: 26px;
-  height: 26px;
-  display: block;
-  box-sizing: border-box;
-  border: 0;
-  border-radius: 50%;
-  background-color: rgba(131, 179, 211, 1);
-  margin: 11px 46px 11px 0;
-  background-image: url(../images/warning-icon.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  position: relative;
-}
-
-.remark-list {
-  display: block;
-  position: absolute;
-  right: 83px;
-  bottom: 0;
 }
