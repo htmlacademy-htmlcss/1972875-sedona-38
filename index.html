@@ -151,7 +151,7 @@
         </section>
       </footer>
     </div>
-    <!--<section class="modal-container">
+    <section class="modal-container modal-container-close">
       <div class="modal modal-auth">
         <button class="modal-close-button">
           <span class="visually-hidden">Закрыть</span>
@@ -161,32 +161,32 @@
           <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
             <p class="field-group field-group-1">
               <label class="modal-form" for="appointment-date">Дата Заезда:</label>
-              <input class="auth-form-field date-field" name="data" type="text" id="arrival" value="27 апреля 2020">
-              <span class="calendar"></span>
+              <input class="auth-form-field" name="data" type="text" id="arrival" value="27 апреля 2020">
             </p>
+            <span class="calendar"></span>
             <span class="note-invalid">Мы не можем отправить вас в прошлое.</span>
             <p class="field-group field-group-2">
-              <label class="modal-form" for="appointment-date">Дата Выезда:</label>
-              <input class="auth-form-field date-field" name="data" type="text" id="arrival" value="1 сентября 2023">
-              <span class="calendar"></span>
+              <label class="modal-form" for="exit-date">Дата Выезда:</label>
+              <input class="auth-form-field" name="data" type="text" id="exit" value="1 сентября 2023">
             </p>
+            <span class="calendar"></span>
             <span class="note-true">На эти даты есть свободные номера. Пока есть.</span>
             <p class="field-group field-group-3">
-              <label class="modal-form adults" for="number">Взрослые:</label>
-              <span class="form-adults minus-1"></span>
-              <span class="form-adults plus-1"></span>
-              <input class="auth-form-field field-adults" type="number" id="number" name="number" placeholder="2">
-              <label class="modal-form children" for="number">Дети:</label>
-              <span class="form-children minus-2"></span>
-              <span class="form-children plus-2"></span>
+              <label class="modal-form adults" for="adults-number">Взрослые:</label>
+              <input class="auth-form-field field-adults" type="text" id="adults-number" name="number" value="2">
+              <label class="modal-form children" for="children-number">Дети:</label>
               <span class="remark"></span>
-              <img class="remark-list" src="images/tooltip.png" alt="Важная заметка о размещении в гостинице детей">
-              <input class="auth-form-field field-children" type="number" id="number" name="number" placeholder="2">
+              <input class="auth-form-field field-children" type="text" id="children-number" name="number" value="2">
             </p>
+            <span class="form-adults minus-1"></span>
+            <span class="form-adults plus-1"></span>
+            <span class="form-children minus-2"></span>
+            <span class="form-children plus-2"></span>
+            <img class="remark-list" src="images/tooltip.png" alt="Важная заметка о размещении детей в гостинице">
             <a class="button auth-form-register" href="#">Найти</a>
           </form>
         </div>
       </div>
-    </section>-->
+    </section>
   </body>
 </html>
