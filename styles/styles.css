@@ -1370,8 +1370,8 @@ body {
 .form-children {
   display: block;
   box-sizing: border-box;
-  width: 40px;
-  min-height: 48px;
+  width: 25px;
+  min-height: 25px;
   background-position: center;
   position: absolute;
 }
@@ -1395,22 +1395,22 @@ body {
 }
 
 .form-adults.minus-1 {
-  top: 358px;
+  top: 368px;
   left: 222px;
 }
 
 .form-adults.plus-1 {
-  top: 358px;
+  top: 368px;
   left: 285px;
 }
 
 .form-children.minus-2 {
-  top: 357px;
+  top: 370px;
   right: 148px;
 }
 
 .form-children.plus-2 {
-  top: 357px;
+  top: 370px;
   right: 84px;
 }
 
@@ -1436,4 +1436,54 @@ body {
   border-radius: 10px;
   padding: 18px 0;
   margin: 0;
+}
+
+.modal-close-button:hover {
+  background-color: rgba(230, 230, 230, 1);
+}
+
+.modal-close-button:focus {
+  background-color: rgba(230, 230, 230, 1);
+  outline: 3px solid rgba(131, 179, 211, 1);
+}
+
+.modal-close-button:active {
+  opacity: 0.5;
+}
+
+.auth-form-field:hover {
+  background-color: rgba(230, 230, 230, 1);
+}
+
+.auth-form-field:focus {
+  background-color: rgba(230, 230, 230, 1);
+  opacity: 3px solid rgba(131, 179, 211, 1);
+}
+
+.form-adults:hover {
+  background-color: rgba(131, 179, 211, 0.5);
+}
+
+.form-adults:focus {
+  background-color: rgba(131, 179, 211, 0.5);
+  opacity: 3px solid rgba(131, 179, 211, 1);
+}
+
+.form-children:hover {
+  background-color: rgba(131, 179, 211, 0.5);
+}
+
+.form-children:focus {
+  background-color: rgba(131, 179, 211, 0.5);
+  opacity: 3px solid rgba(131, 179, 211, 1);
+}
+
+.auth-form-registere:hover,
+.auth-form-registere:focus {
+  background-color: rgba(104, 162, 202, 1);
+}
+
+.auth-form-register:active {
+  background-color: rgba(130, 179, 211, 1);
+  color: rgba(255, 255, 255, 0.3);
 }
