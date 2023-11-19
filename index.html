@@ -2,8 +2,10 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" href="images/favi-icon.png" sizes="32x32">
     <title>Седона</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <div class="body-container">
@@ -151,7 +153,7 @@
         </section>
       </footer>
     </div>
-    <section class="modal-container modal-container-close">
+    <section class="modal-container modal-container-close"> <!---->
       <div class="modal modal-auth">
         <button class="modal-close-button">
           <span class="visually-hidden">Закрыть</span>
@@ -160,23 +162,23 @@
           <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
           <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
             <p class="field-group field-group-1">
-              <label class="modal-form" for="appointment-date">Дата Заезда:</label>
-              <input class="auth-form-field" name="data" type="text" id="arrival" value="27 апреля 2020">
+              <label class="modal-form" for="arrival-date">Дата Заезда:</label>
+              <input class="auth-form-field" name="first-data" type="text" id="arrival-date" placeholder="27 апреля 2020" required>
             </p>
             <span class="calendar"></span>
             <span class="note-invalid">Мы не можем отправить вас в прошлое.</span>
             <p class="field-group field-group-2">
               <label class="modal-form" for="exit-date">Дата Выезда:</label>
-              <input class="auth-form-field" name="data" type="text" id="exit" value="1 сентября 2023">
+              <input class="auth-form-field" name="last-data" type="text" id="exit-date" placeholder="1 сентября 2023" required>
             </p>
             <span class="calendar"></span>
             <span class="note-true">На эти даты есть свободные номера. Пока есть.</span>
             <p class="field-group field-group-3">
               <label class="modal-form adults" for="adults-number">Взрослые:</label>
-              <input class="auth-form-field field-adults" type="text" id="adults-number" name="number" value="2">
+              <input class="auth-form-field field-adults" type="text" id="adults-number" name="number" placeholder="2" required>
               <label class="modal-form children" for="children-number">Дети:</label>
               <span class="remark"></span>
-              <input class="auth-form-field field-children" type="text" id="children-number" name="number" value="2">
+              <input class="auth-form-field field-children" type="text" id="children-number" name="number" placeholder="2" required>
             </p>
             <span class="form-adults minus-1"></span>
             <span class="form-adults plus-1"></span>
