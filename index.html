@@ -10,7 +10,7 @@
   <body>
     <div class="body-container">
       <header class="page-header">
-        <a class="logo-nav" href="index.html"><img src="images/logo.svg" alt="Логотип гостиницы Седона" width="140" height="70"></a>
+        <a class="logo-nav" href="index.html"><img src="images/logo.svg" alt="Логотип гостиницы Седона." width="140" height="70"></a>
         <nav class="navigation">
           <ul class="navigation-list">
             <li class="navigation-item">
@@ -26,10 +26,12 @@
           <ul class="navigation-user">
             <li class="navigation-item-user">
               <a class="navigation-src" href="#"></a>
+              <span class="visually-hidden">поиск.</span>
             </li>
             <li class="navigation-item-user-like">
               <span class="navigation-score">12</span>
               <a class="navigation-like" href="#"></a>
+              <span class="visually-hidden">понравилось.</span>
             </li>
             <li class="navigation-item-user-join">
               <a class="navigation-join bt-brown" href="#">Хочу сюда!</a>
@@ -40,7 +42,7 @@
       <main class="main-container">
         <section class="main-img">
           <h1 class="visually-hidden">Гостиница в городе Седона</h1>
-          <img class="slogan" src="images/welcome.svg" alt="Добро пожаловать в великолепный город Седона" width="458" height="352">
+          <img class="slogan" src="images/welcome.svg" alt="Добро пожаловать в великолепный город Седона." width="458" height="352">
         </section>
         <div class="main-title town">
           <h2>Седона — небольшой городок в Аризоне,<br>заслуживающий большего!</h2>
@@ -52,7 +54,7 @@
               <h3 class="advantages-content-title advantages-blue">Настоящий<br>городок</h3>
               <p class="advantages-content-text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
             </div>
-            <img class="advantages-img" src="images/photo-1.jpg" alt="Гостиница" width="800" height="385">
+            <img class="advantages-img" src="images/photo-1.jpg" alt="Гостиница." width="800" height="385">
           </div>
           <div class="advantages-content">
             <div class="advantages-over advantages-2">
@@ -69,7 +71,7 @@
             </div>
           </div>
           <div class="advantages-content">
-            <img class="advantages-img" src="images/photo-2.jpg" alt="Мост дьявола" width="800" height="385">
+            <img class="advantages-img" src="images/photo-2.jpg" alt="Мост дьявола." width="800" height="385">
             <div class="advantages-over advantages-5">
               <h3 class="advantages-content-title advantages-blue">Там есть<br>мост дьявола</h3>
               <p class="advantages-content-text">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
@@ -117,7 +119,7 @@
         <section class="sticky-footer">
           <div class="footer-wrapper">
             <div class="network">
-              <span class="visually-hidden">мы в социальных сетях в контакте, телеграмм, ютьюбе</span>
+              <span class="visually-hidden">мы в социальных сетях в контакте, телеграмм, ютьюбе.</span>
               <a class="vkontakte network-link" href="https://vk.com/htmlacademy"><svg aria-hidden="true" focusable="false" width="25" height="15" viewBox="0 0 25 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path class="network-icon" fill-rule="evenodd" clip-rule="evenodd" d="M24.1164 1.80445C24.2824 1.25845 24.1164 0.856445 23.3214 0.856445H20.6964C20.0284 0.856445 19.7204 1.20345 19.5534 1.58645C19.5534 1.58645 18.2184 4.78245 16.3274 6.85845C15.7154 7.46045 15.4374 7.65145 15.1034 7.65145C14.9364 7.65145 14.6854 7.46045 14.6854 6.91345V1.80445C14.6854 1.14845 14.5014 0.856445 13.9454 0.856445H9.81738C9.40038 0.856445 9.14938 1.16045 9.14938 1.44945C9.14938 2.07045 10.0954 2.21445 10.1924 3.96245V7.76045C10.1924 8.59345 10.0394 8.74444 9.70538 8.74444C8.81538 8.74444 6.65038 5.53345 5.36538 1.85945C5.11638 1.14445 4.86438 0.856445 4.19338 0.856445H1.56638C0.816382 0.856445 0.666382 1.20345 0.666382 1.58645C0.666382 2.26845 1.55638 5.65645 4.81138 10.1374C6.98138 13.1974 10.0364 14.8564 12.8194 14.8564C14.4884 14.8564 14.6944 14.4884 14.6944 13.8534V11.5404C14.6944 10.8034 14.8524 10.6564 15.3814 10.6564C15.7714 10.6564 16.4384 10.8484 17.9964 12.3234C19.7764 14.0724 20.0694 14.8564 21.0714 14.8564H23.6964C24.4464 14.8564 24.8224 14.4884 24.6064 13.7604C24.3684 13.0364 23.5184 11.9854 22.3914 10.7384C21.7794 10.0284 20.8614 9.26345 20.5824 8.88045C20.1934 8.38945 20.3044 8.17044 20.5824 7.73345C20.5824 7.73345 23.7824 3.30745 24.1154 1.80445H24.1164Z" fill="#83B3D3"/>
                 </svg></a>
@@ -155,8 +157,8 @@
     </div>
     <section class="modal-container modal-container-closed">
       <div class="modal modal-auth">
-        <button class="modal-close-button">
-          <span class="visually-hidden">Закрыть</span>
+        <button class="modal-close-button" type="button">
+          <span class="visually-hidden">Закрыть.</span>
         </button>
         <div class="modal-content">
           <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
@@ -184,7 +186,7 @@
             <span class="form-adults plus-1"></span>
             <span class="form-children minus-2"></span>
             <span class="form-children plus-2"></span>
-            <img class="remark-list" src="images/tooltip.png" alt="Важная заметка о размещении детей в гостинице" width="256" height="143">
+            <img class="remark-list" src="images/tooltip.png" alt="Важная заметка о размещении детей в гостинице." width="256" height="143">
             <a class="button auth-form-register" href="#">Найти</a>
           </form>
         </div>
