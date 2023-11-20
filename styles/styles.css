@@ -191,6 +191,7 @@ body {
 .main-container {
   flex-grow: 1;
 }
+
 .main-img {
   background-color: #82B3D3;
   background-image: url(../images/main-image.jpg) ;
@@ -513,13 +514,13 @@ body {
 .telegram {
   width: 18px;
   height: 15.5px;
-  margin: 17px 11px;
+  margin: 18px 11px;
 }
 
 .youtube {
   width: 22px;
   height: 17px;
-  margin: 16px 12px;
+  margin: 18px 12px;
 }
 
 .network-link:hover .network-icon {
@@ -1202,7 +1203,7 @@ body {
   background-color: rgba(242, 242, 242, 0.8);
 }
 
-.modal-container-close {
+.modal-container-closed {
   display: none;
 }
 
@@ -1412,17 +1413,19 @@ body {
 }
 
 .remark-list {
+  width: 256px;
+  height: 143px;
   display: block;
   position: absolute;
-  right: 82px;
-  top: 391px;
+  right: 112px;
+  top: 395px;
 }
 
 .auth-form-register {
   box-sizing: border-box;
   background: rgba(131, 179, 211, 1);
   width: 100%;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
